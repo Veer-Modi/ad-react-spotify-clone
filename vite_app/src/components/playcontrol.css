@@ -1,0 +1,81 @@
+.player {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.audio-player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #181818;
+    padding: 1vh 0;
+}
+
+.song-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 13%;
+    margin-left: 1vw;
+}
+
+.song-logo>img {
+    height: 7vh;
+}
+
+.title {
+    color: white;
+    font-size: 0.9rem;
+}
+
+.writter {
+    color: gray;
+    font-size: 0.7rem;
+}
+
+.like-button>img {
+    height: 2vh;
+}
+
+.song-play {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.song-play>img {
+    width: 100%;
+}
+
+.other-option {
+    width: 20%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1vw;
+}
+
+.other-option>img {
+    width: 100%;
+}
+
+.device-player {
+    width: 100%;
+    background-color: #1ED760;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.device-player>p {
+    margin: 0.2% 0 0.2% 80%;
+    color: black;
+}

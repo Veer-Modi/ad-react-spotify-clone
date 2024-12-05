@@ -1,0 +1,237 @@
+.main-body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.sidebar {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    width: 17%;
+    height: 100%;
+    justify-items: center;
+    background-color: #000000;
+}
+
+.logo {
+    margin-top: 4vh;
+    width: 50%;
+    height: max-content;
+    margin-right: 4vw;
+}
+
+.logo>img {
+    width: 100%;
+}
+
+.home-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    height: max-content;
+    font-weight: 600;
+    margin-right: 2vw;
+}
+
+.home {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1vh 3vw 1vh 0;
+    cursor: pointer;
+}
+
+.home:nth-child(3) {
+    margin-left: 2.5rem;
+}
+
+.home>p {
+    margin-left: 2vw;
+}
+
+.home>img {
+    width: 1.5rem;
+}
+
+.my-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    height: max-content;
+    margin-right: 2vw;
+    font-weight: 600;
+}
+
+.my {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1vh 0 1vh 0;
+    cursor: pointer;
+}
+
+.my:nth-child(2) {
+    margin-right: 1rem;
+}
+
+.my>p {
+    margin-left: 2vw;
+}
+
+.my>img {
+    width: 1.5rem;
+}
+
+.fav {
+    margin-right: 2vw;
+}
+
+.fav>p {
+    margin: 2vh 0;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.install {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: max-content;
+    height: max-content;
+    cursor: pointer;
+    margin-right: 4vw;
+}
+
+.install>img {
+    width: 1.5rem;
+}
+
+.install>p {
+    margin-left: 2vw;
+    font-weight: 600;
+}
+
+.spotify-body {
+    width: 83%;
+    height: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2vh 0 5vh 0;
+}
+
+.arrow {
+    width: max-content;
+    height: max-content;
+}
+
+.arrow>img {
+    width: 30%;
+}
+
+.profile {
+    width: max-content;
+    height: max-content;
+    margin-left: 47vw;
+}
+
+.profile>img {
+    width: 70%;
+}
+
+.recent {
+    margin: 5vh 2vw;
+}
+
+.recent>h1 {
+    font-size: 1.7rem;
+}
+
+.recent-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    margin: 4vh 0 7vh 0;
+    grid-gap: 1vw;
+    height: max-content;
+}
+
+.recent-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #303030;
+    height: max-content;
+    width: 19vw;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+.recent-item>img {
+    width: 5vw;
+    overflow: hidden;
+}
+
+.recent-item>p {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-right: 6vw;
+}
+
+.recent-item:nth-child(5)>p {
+    margin-right: 2vw;
+}
+
+.recent-item:hover{
+    background-color: rgba(128, 128, 128, 0.055);
+}
+
+.rec {
+    margin: 5vh 2vw;
+}
+
+.rec>h1 {
+    font-size: 1.4rem;
+}
+
+.rec-container {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    margin: 3vh 0 0 0;
+    height: max-content;
+}
+
+.rec-item {
+    background-color: #181818;
+    width: max-content;
+    padding: 1vw;
+    height: max-content;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.rec-item>img {
+    width: 10vw;
+}
+
+.rec-item:hover{
+    background-color: rgba(85, 85, 85, 0.082);
+}
+
+.rec-item>p {
+    margin: 0.5rem 0 0 0;
+}

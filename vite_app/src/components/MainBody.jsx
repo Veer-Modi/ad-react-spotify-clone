@@ -7,7 +7,8 @@ function MainBody(){
     {id:2, title: "Neffex Playlist", img:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/image4.png?raw=true"},
     {id:3, title: "K / DA", img:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/image3.png?raw=true"},
     {id:4, title: "Liked Songs", img:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/image1.png?raw=true"},
-    {id:5, title: "Dance / Electronic Mix", img:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/image2.png?raw=true"}
+    {id:6, title: "Dance / Electronic Mix", img:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/image2.png?raw=true"},
+    {id:8, title: "Motivation", img:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/image9.png?raw=true"},
   ]
 
   const recs = [
@@ -18,6 +19,8 @@ function MainBody(){
     {id:5, title:"The Stories of Ma...", writer:"Lexus", img:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/image5.png?raw=true"},
     {id:6, title:"Movitivation Daily b...", writer:"Georgina Martha", img:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/image10.png?raw=true"},
   ]
+
+  const evenId = recents.filter((recent) => recent.id % 2===0);
 
     return (
         <>
@@ -107,7 +110,7 @@ function MainBody(){
             <section className="recent">
               <h1>Good Morning</h1>
               <div className="recent-container">
-                {recents.map((recent)=>(
+                {evenId.map((recent)=> (
                     <div key={recent.id} className="recent-item">
                       <img src={recent.img} alt="" />
                       <p>{recent.title}</p>
